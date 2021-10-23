@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 html,
 body {
   height: 100%;
@@ -13,9 +16,13 @@ body {
 }
 
 main {
-  background: url(images/Mobile.png);
-  width: 375px;
-  height: 812px;
+  /*O background não repetira a imagem para cobrir os espaços e ira usar a imagem centralizada e proporcional ao tamanho da tela*/
+  background: url(images/Mobile.svg) no-repeat center/cover;
+  /*A imagem terá o tamanho viewport do dispositivo*/
+  width: 100vw;
+  min-height: 812px;
+  /*Pelo comprimento do dispositivo*/
+  height: 100vh;
 }
 
 .container {

@@ -2,7 +2,7 @@ const linksSocialMedia = {
   github: 'luccaraphae',
   discord: 'luccaraphae#3029',
   instagram: 'miixangel',
-  linkedin: 'luccaraphae',
+  linkedin: 'in/luccaraphae',
   twitter: 'Miixangel'
 }
 

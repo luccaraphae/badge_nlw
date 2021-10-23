@@ -105,7 +105,8 @@
 
   main {
     /*O background não repetira a imagem para cobrir os espaços e ira usar a imagem centralizada e proporcional ao tamanho da tela*/
-    background: url(images/Desktop/Desktop.svg) no-repeat center/cover;
+    background: url(images/Desktop/background-desktop.svg) no-repeat
+      center/cover;
     /*A imagem terá o tamanho viewport do dispositivo*/
     width: 100vw;
     /*Pelo comprimento do dispositivo*/
@@ -179,7 +180,8 @@
 @media (min-width: 960px) {
   main {
     /*O background não repetira a imagem para cobrir os espaços e ira usar a imagem centralizada e proporcional ao tamanho da tela*/
-    background: url(images/Desktop/Desktop.svg) no-repeat center/cover;
+    background: url(images/Desktop/background-desktop.svg) no-repeat
+      center/cover;
     background-color: #121214;
     /*A imagem terá o tamanho viewport do dispositivo*/
     width: 100vw;

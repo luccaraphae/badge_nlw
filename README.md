@@ -6,7 +6,7 @@ A atividade constitui em um crachá com contatos de redes sociais em HTML, os da
 
 ## Faça o seu!
 
-- Altere os usuários da função **linksSocialMedia** no arquivo *main.js*;
+- Altere os usuários da função **linksSocialMedia** no arquivo *main.js* para seus usuários;
 - E prontinho, o javascript irá substituir as palavras chave *user* pelo seu usuário;
 - PS.: No caso do LinkedIn o /in antes do usuário deve ser reescrito.
 

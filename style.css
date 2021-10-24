@@ -121,8 +121,22 @@ li:hover {
   }
 
   .container {
+<<<<<<< HEAD
     margin-top: -1rem;
     width: fit-content;
+=======
+    max-width: 458px;
+    margin: 0 auto 0;
+    text-align: center;
+    color: var(--gray);
+  }
+
+  .avatar {
+    width: 10rem;
+    margin: 8rem auto 0;
+    /*Define um limite para os elementos internos da class Avatar, seus membros serão relativos a ele*/
+    position: relative;
+>>>>>>> 90e065cbc0ba6bf28bd81447401d71bf5bbd8094
   }
 
   h1 {
@@ -132,6 +146,36 @@ li:hover {
   .avatar > img {
     width: 8rem;
     height: 9.5rem;
+<<<<<<< HEAD
+=======
+    /*Ajusta a proporção da imagem*/
+    object-fit: cover;
+    /*Cria um formato diferente sob a imagem*/
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 26%);
+    margin-top: 2.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+    color: var(--gray);
+    text-decoration: none;
+
+    margin-top: 0.3rem;
+
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  p {
+    margin: 2rem 3.5rem;
+    font-size: 1rem;
+>>>>>>> 90e065cbc0ba6bf28bd81447401d71bf5bbd8094
   }
 
   .avatar {

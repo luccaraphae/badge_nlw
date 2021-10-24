@@ -2,109 +2,103 @@
   margin: 0;
 }
 
-@media (max-width: 767px) {
-  html,
-  body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  body {
-    --black: hsl(240, 6%, 13%);
-    --gray: hsl(240, 9%, 89%);
-    display: grid;
-    place-items: center;
-  }
-
-  main {
-    /*O background não repetira a imagem para cobrir os espaços e ira usar a imagem centralizada e proporcional ao tamanho da tela*/
-    background: url(images/Mobile.svg) no-repeat center/cover;
-    /*A imagem terá o tamanho viewport do dispositivo*/
-    width: 100vw;
-    /*Pelo comprimento do dispositivo*/
-    height: 100vh;
-  }
-
-  .container {
-    max-width: 250px;
-    margin: 0 auto 0;
-    text-align: center;
-    color: var(--gray);
-  }
-
-  .avatar {
-    width: 10rem;
-    margin: 11.5rem auto 0;
-    /*Define um limite para os elementos internos da class Avatar, seus membros serão relativos a ele*/
-    position: relative;
-  }
-
-  .avatar span {
-    position: absolute;
-    top: -15px;
-    z-index: 1;
-  }
-
-  .avatar > img {
-    width: 10rem;
-    height: 11.5rem;
-    /*Ajusta a proporção da imagem*/
-    object-fit: cover;
-    /*Cria um formato diferente sob a imagem*/
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 26%);
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  a {
-    color: var(--gray);
-    text-decoration: none;
-
-    margin-top: 0.25rem;
-
-    display: flex;
-    gap: 0.75rem;
-    justify-content: center;
-  }
-
-  p {
-    margin-top: 2rem;
-  }
-
-  ul {
-    margin-top: 3rem;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-left: 0.5rem;
-    /*Distanciamento entre os elementos*/
-    gap: 0.5rem;
-  }
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-@media (min-width: 768px) {
-  html,
-  body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
+body {
+  --black: hsl(240, 6%, 13%);
+  --gray: hsl(240, 9%, 89%);
+  display: grid;
+  place-items: center;
+}
 
-  body {
-    --black: hsl(240, 6%, 13%);
-    --gray: hsl(240, 9%, 89%);
-    display: grid;
-    place-items: center;
-    background-color: #121214;
-  }
+main {
+  /*O background não repetira a imagem para cobrir os espaços e ira usar a imagem centralizada e proporcional ao tamanho da tela*/
+  background: url(images/Mobile.svg) no-repeat center/cover;
+  /*A imagem terá o tamanho viewport do dispositivo*/
+  width: 100vw;
+  /*Pelo comprimento do dispositivo*/
+  height: 100vh;
+}
 
+.container {
+  max-width: 16.8rem;
+  margin: 0 auto 0;
+  text-align: center;
+  color: var(--gray);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  /*Define um limite para os elementos internos da class Avatar, seus membros serão relativos a ele*/
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  margin-top: 2.3rem;
+  width: 10rem;
+  height: 11.5rem;
+  /*Ajusta a proporção da imagem*/
+  object-fit: cover;
+  /*Cria um formato diferente sob a imagem*/
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 26%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+a {
+  color: var(--gray);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+p {
+  margin-top: 1.5rem;
+}
+
+ul {
+  margin-top: 2rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-left: 0.5rem;
+  /*Distanciamento entre os elementos*/
+  gap: 0.5rem;
+}
+
+li img {
+  border-radius: 0.6rem;
+  width: 3rem;
+}
+
+li:hover {
+  border-bottom: solid 0.1rem #f86503;
+  border-left: solid 0.1rem #f86503;
+  border-radius: 0.6rem;
+}
+
+@media (min-width: 720px) {
   main {
-    /*O background não repetira a imagem para cobrir os espaços e ira usar a imagem centralizada e proporcional ao tamanho da tela*/
     background: url(images/background-desktop.svg) no-repeat center/cover;
     /*A imagem terá o tamanho viewport do dispositivo*/
     width: 100vw;
@@ -112,75 +106,14 @@
     height: 100vh;
   }
 
-  .container {
-    max-width: 358px;
-    max-height: 540px;
-    margin: 0 auto 0;
-    text-align: center;
-    color: var(--gray);
-  }
-
-  .avatar {
-    width: 10rem;
-    margin: 11.5rem auto 0;
-    /*Define um limite para os elementos internos da class Avatar, seus membros serão relativos a ele*/
-    position: relative;
-  }
-
   .avatar span {
-    position: absolute;
     top: 5px;
-    z-index: 1;
-  }
-
-  .avatar > img {
-    width: 8rem;
-    height: 9.5rem;
-    /*Ajusta a proporção da imagem*/
-    object-fit: cover;
-    /*Cria um formato diferente sob a imagem*/
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 26%);
-    margin-top: 2.5rem;
-  }
-
-  h1 {
-    font-size: 1.4rem;
-    margin-top: 1.5rem;
-  }
-
-  a {
-    color: var(--gray);
-    text-decoration: none;
-
-    margin-top: 0.25rem;
-
-    display: flex;
-    gap: 0.75rem;
-    justify-content: center;
-  }
-
-  p {
-    margin: 2rem;
-    font-size: 0.8rem;
-  }
-
-  ul {
-    margin-top: 2rem;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-left: 0.5rem;
-    /*Distanciamento entre os elementos*/
-    gap: 0.5rem;
   }
 }
 
 @media (min-width: 960px) {
   main {
-    /*O background não repetira a imagem para cobrir os espaços e ira usar a imagem centralizada e proporcional ao tamanho da tela*/
     background: url(images/background-desktop.svg) no-repeat center/cover;
-    background-color: #121214;
     /*A imagem terá o tamanho viewport do dispositivo*/
     width: 100vw;
     /*Pelo comprimento do dispositivo*/
@@ -188,65 +121,21 @@
   }
 
   .container {
-    max-width: 458px;
-    margin: 0 auto 0;
-    text-align: center;
-    color: var(--gray);
+    margin-top: -1rem;
+    width: fit-content;
   }
 
-  .avatar {
-    width: 10rem;
-    margin: 10rem auto 0;
-    /*Define um limite para os elementos internos da class Avatar, seus membros serão relativos a ele*/
-    position: relative;
-  }
-
-  .avatar span {
-    position: absolute;
-    top: 5px;
-    z-index: 1;
+  h1 {
+    font-size: 1.4rem;
   }
 
   .avatar > img {
     width: 8rem;
     height: 9.5rem;
-    /*Ajusta a proporção da imagem*/
-    object-fit: cover;
-    /*Cria um formato diferente sob a imagem*/
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 26%);
-    margin-top: 2.5rem;
   }
 
-  h1 {
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
-
-  a {
-    font-size: 1.2rem;
-    color: var(--gray);
-    text-decoration: none;
-
-    margin-top: 0.3rem;
-
-    display: flex;
-    gap: 0.75rem;
-    justify-content: center;
-  }
-
-  p {
-    margin: 2rem 3.5rem;
-    font-size: 1rem;
-  }
-
-  ul {
-    margin-top: 2rem;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-left: 0.5rem;
-    /*Distanciamento entre os elementos*/
-    gap: 0.8rem;
+  .avatar {
+    width: 10rem;
+    margin: 9.5rem auto 0;
   }
 }

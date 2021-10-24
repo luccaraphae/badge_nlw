@@ -188,7 +188,7 @@
   }
 
   .container {
-    max-width: 458px;
+    max-width: 450px;
     margin: 0 auto 0;
     text-align: center;
     color: var(--gray);
@@ -196,7 +196,7 @@
 
   .avatar {
     width: 10rem;
-    margin: 10rem auto 0;
+    margin: 9rem auto 0;
     /*Define um limite para os elementos internos da class Avatar, seus membros serão relativos a ele*/
     position: relative;
   }

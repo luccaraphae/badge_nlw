@@ -196,7 +196,7 @@
 
   .avatar {
     width: 10rem;
-    margin: 11.5rem auto 0;
+    margin: 10rem auto 0;
     /*Define um limite para os elementos internos da class Avatar, seus membros serão relativos a ele*/
     position: relative;
   }
@@ -236,7 +236,7 @@
 
   p {
     margin: 2rem 3.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   ul {
